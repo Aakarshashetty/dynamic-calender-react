@@ -3,13 +3,18 @@ import { useData } from "../contexts/dataContext";
 import { formatTimestamp } from "../utils/formatTimeStamp";
 
 export const Slots = () => {
-  const { apiData, selectedDate } = useData();
+  const { apiData, selectedDate,loading } = useData();
   const [clickedIndex, setClickedIndex] = useState(null);
   const apiDates = apiData.map((item) => ({
     ...item,
     date: new Date(item.date).toDateString(),
   }));
   const slots = apiDates.filter((item) => item.date === selectedDate)[0].slots;
+  if(loading){
+    return(
+      <p>Loading...</p>
+    )
+  }
   return (
     <div className="slots">
       <label>

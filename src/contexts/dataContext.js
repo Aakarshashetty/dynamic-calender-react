@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
-
+import toast from "react-hot-toast";
 export const DataContext = createContext();
 export const DataContextProvider = ({ children }) => {
   const [apiData, setApiData] = useState([]);
@@ -19,11 +19,11 @@ export const DataContextProvider = ({ children }) => {
             setSelectedDate(date.toDateString());
           })
           .catch((error) => {
-            console.error("Error fetching data from API:", error);
+            toast.error("Error fetching data from API:", error);
             setLoading(false);
           });
       } catch (e) {
-        console.error(e);
+        toast.error("Something went wrong");
       }
     })();
     // eslint-disable-next-line
