@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Dynamic Appointment Booking Screen
+  This React application allows users to view available timeslots, select a date, and book appointments. The integration with a mock API provides dynamic data for timeslots. The main UI    component is a calendar view that displays dates and corresponding available timeslots.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+- Getting Started
+  - Prerequisites
+  - Installation
+- Usage
+  - Fetching Timeslots
+  - Selecting a Date
+  - Booking an Appointment
+- React Best Practices
+- Optional Features
+- Deployment
 
-## Available Scripts
+## Getting Started
+### Prerequisites
+Before running the application, make sure you have the following installed:
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+### Installation:
+1. Clone the repository:
+```
+git clone https://github.com/your-username/dynamic-appointment-booking-react.git
+```
+2. Navigate to the project directory:
+```
+cd dynamic-appointment-booking-react
+```
+3. Install dependencies:
+```
+npm install
+```
+## Usage
+### Fetching Timeslots
+The application fetches available timeslots from a mock API endpoint. When the app loads, it makes a GET request to the endpoint, and the available timeslots are displayed in the calendar.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
+### Selecting a Date
+- Use the calendar to navigate to the desired date.
+- Available timeslots for the selected date will be displayed.
+### Booking an Appointment
+- Select a timeslot to book an appointment.
+- A booking confirmation step is not required for this assignment.
+### React Best Practices
+- Functional components and hooks are used for clean and modular code.
+- State is managed effectively using React hooks such as `useState` and `useEffect`.
+### Optional Features
+- Animations or transitions are added for a better user experience.
+- Responsive design ensures the UI looks good on both mobile and desktop views.
 ### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The application is deployed on Netlify at [dynamic-calender-react](https://dynamic-calender-react.netlify.app/) .
